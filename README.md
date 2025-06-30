@@ -105,9 +105,11 @@ Para a obtenção dos dados apresentados abaixo foram utilizados testes disponí
 ## Comparativo de tempo
 
 ![Image](https://github.com/user-attachments/assets/622dfc76-9656-49dc-a182-35c266216f62)
+
 *Figura 1: Evolução do tempo para instâncias do Moodle (Eixo X: Magnitude das instâncias; Eixo Y: Tempo em milissegundos)*
 
 ![Image](https://github.com/user-attachments/assets/05ae31a4-eb98-47a9-9d9e-c84af75a479c)
+
 *Figura 2: Comparação entre tempos de execução (Eixo X: Magnitude das instâncias; Eixo Y: Tempo em milissegundos)*
 
 Como esperado, a solução exata cresce extremamente rápido em relação a mínimas variações da entrada. A partir da comparação entre tempos de execução, podemos perceber a discrepância entre as soluções, sendo tão absurdamente grande, que não é, nem ao menos, possível observar o comportamento polinomial da solução aproximativa.
@@ -115,9 +117,11 @@ Como esperado, a solução exata cresce extremamente rápido em relação a mín
 ## Comparativo da qualidade da resposta
 
 ![Image](https://github.com/user-attachments/assets/809a4204-c6ae-4f8d-b636-35bb5ba9fb54)
+
 *Figura 3: Qualidade da aproximação (Eixo X: Magnitude das instâncias; Eixo Y: Movimentos para captura)*
 
 ![Image](https://github.com/user-attachments/assets/835b56d3-58af-4409-977d-a5961e1465cd)
+
 *Figura 4: Dispersão da solução aproximativa (Eixo X: Magnitude das instâncias; Eixo Y: Movimentos para captura)*
 
 É possível perceber que a solução aproximada gera boas respostas em relação as instâncias testadas, porém, pela limitação de tempo da resposta exata, torna-se inviável avaliar a solução aproximada para instâncias realmente grandes, além disso, o algoritmo aproximativo implementado não nos dá nenhuma garantia em relação a resposta, ou seja, ele pode ser muito pior que o melhor caminho. Em relação a outras aproximações, temos heurísticas que nos garante algo sobre a resposta, como por exemplo o algoritmo aproximativo que utiliza uma MST para obtenção de um caminho barato, nem sempre ótimo, mas que garante ser pelo menos menor que duas vezes o caminho ótimo. Entretanto, em comparação, a complexidade para implementação desses algoritmos é maior, e em certas instâncias e cenários onde se pode arcar com a não garantia da solução ideal, a heurística de vizinho mais próximo se mostra promissora.
